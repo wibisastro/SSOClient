@@ -1,0 +1,25 @@
+<?
+/********************************************************************
+*	Date		: Friday, May 13, 2011
+*	Author		: Wibisono Sastrodiwiryo
+*	Email		: support@cybergl.co.id
+*	Copyright	: PT Cyber Gatra Loka. All rights reserved. 
+*********************************************************************/
+require("config.php"); 
+#------------------------init
+$ses->authenticate("guest");
+$doc->pagetitle="Browser";
+$doc->doctype="public";
+$doc->bodytype="center";
+$doc->content("general/headerbody.php");
+
+#------------------------proc
+
+$doc->content("general/browser.php");
+$doc->error_message();
+
+#------------------------view
+
+include(viwpath."/general/body.php");
+
+?>
