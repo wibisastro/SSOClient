@@ -30,10 +30,12 @@ switch ($_GET['error']) {
 	#-ganti jika lokasinya dipindah. saran pindahkan ke luar web root
 
 switch ($_SERVER["SERVER_NAME"]) {
+	case "duknaker.dep.eplanning.id":
 	case "masda.dep.eplanning.id":
-		define("SSONODE","https://sso.eplanning.id");
+		define("SSONODE","https://sso.gov2.web.id");
 	break;
-    case "sisdur.bappenas.kl.krisna.systems":
+    case "kemenkeu.kl.krisna.systems":
+    case "bappenas.kl.krisna.systems":
         define("SSONODE","https://sso.kl.krisna.systems");
 	break;
     case "bella.jegeg.ngontel":

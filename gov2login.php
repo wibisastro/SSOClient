@@ -62,6 +62,5 @@ switch ($cmd) {
                 if (!$gov2->error) {header("Location: https://".$_SERVER["SERVER_NAME"]);}
         }
 }
-
 include("gov2view.php");
 ?>

@@ -1,7 +1,7 @@
 <?
 require("gov2model.php");
 $gov2=new gov2model;
-$gov2->authorize("member");
+$gov2->authorize("guest");
 if (!$gov2->error) {
 	echo "Selamat datang ".$_SESSION['fullname'];
 } else {
