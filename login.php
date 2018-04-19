@@ -6,6 +6,8 @@
 *	Copyright	: Cyber GovLabs. All rights reserved.
 *********************************************************************/
 require("gov2model.php");
+$gov2=new gov2model;
+$gov2->authorize("guest");
 
 switch($_GET["cmd"]) {
     case "fbconnect":
