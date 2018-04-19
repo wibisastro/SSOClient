@@ -3,6 +3,9 @@ require("gov2model.php");
 $gov2=new gov2model;
 $gov2->authorize("public");
 ?>
+
+<h1>Gov 2.0 SSO Client</h1>
+
 <div>
       <ul>
           <?if ($_SESSION["account_id"]){?>
